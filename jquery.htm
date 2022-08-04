@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquey</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#BtnFadeOut").attr("disabled", true);
+        $("#BtnFadeIn").click(function () {
+          if (confirm("Are you sure..?")) {
+            $("#Div1").fadeIn(1000);
+            $("#Div2").fadeIn(2000);
+            $("#Div3").fadeIn(4000);
+            $("#BtnFadeOut").attr("disabled", false);
+            $("#BtnFadeIn").attr("disabled", true);
+          }
+        });
+      });
+      $(document).ready(function () {
+        $("#BtnFadeIn").attr("bled", true);
+        $("#BtnFadeOut").click(function () {
+          if (confirm("Are you sure? ..")) {
+            $("#Div1").fadeOut(1000);
+            $("#Div2").fadeOut(2000);
+            $("#Div3").fadeOut(3000);
+            $("#BtnfadeOut").attr("disabled", false);
+            $("#BtnFadeIn").attr("disabled", true);
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="BtnFadeIn">Click me fade In</button>
+    <br />
+    <hr />
+    <div
+      id="Div1"
+      style="width: 100px; height: 100px; display: none; background-color: red"
+    ></div>
+    <hr />
+    <div
+      id="Div2"
+      style="
+        width: 100px;
+        height: 100px;
+        display: none;
+        background-color: green;
+      "
+    ></div>
+    <hr />
+    <div
+      id="Div3"
+      style="
+        width: 100px;
+        height: 100px;
+        display: none;
+        background-color: blueviolet;
+      "
+    ></div>
+    <hr />
+
+    <button id="BtnFadeOut">Click me fade Out</button>
+  </body>
+</html>
