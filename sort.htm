@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sort Jquery</title>
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-1.10.2.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"
+      type="text/javascript"
+    ></script>
+
+    <style type="text/css">
+      #sortable,
+      #sortable {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 120%;
+      }
+      #sortable li,
+      #sortable li {
+        margin: 10px;
+        padding: 20px;
+        font-size: 17px;
+        height: 16px;
+      }
+      .from,
+      .to,
+      .Undefine,
+      .invite {
+        background: #0cdce0;
+        border: 1px solid #064bc2;
+        color: #24db4c;
+      }
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sortable").sortable();
+
+        $("#sortable").sortable();
+
+        $("#sortable").sortable({
+          connectWith: "#sortable, #sortable",
+        });
+
+        $("#sortable").sortable({
+          connectWith: "#sortable, #sortable",
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="word">
+      <div class="wrap2">
+        <h3>List 1</h3>
+        <ul id="sortable">
+          <li class="from">A</li>
+          <li class="to">B</li>
+          <li class="invite">C</li>
+          <li class="Undefine">D</li>
+        </ul>
+      </div>
+      <div class="wrap2">
+        <h3>List 2</h3>
+        <ul id="sortable">
+          <li class="to">a</li>
+          <li class="from">b</li>
+          <li class="invite">c</li>
+          <li class="Undefine">d</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <span id="result"></span>
+  </body>
+</html>
