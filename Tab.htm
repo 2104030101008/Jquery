@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Tab JQuery UI</title>
+
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-1.10.2.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"
+      type="text/javascript"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#MyTabDiv").tabs();
+      });
+    </script>
+
+    <style type="text/css">
+      #MyTabDiv {
+        font-size: 14px;
+      }
+      #MyTabDiv div,
+      #MyTabDiv p video {
+        position: relative;
+        background: fixed;
+      }
+      .ui-widget-header {
+        background: #1773bd;
+        border: 1px solid #5632b1;
+        color: #1fb433;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="MyTabDiv">
+      <ul>
+        <li><a href="#tab1">My way </a></li>
+        <li><a href="#tab2">My Skyway</a></li>
+        <li><a href="#tab3">Government Highway</a></li>
+      </ul>
+      <div id="tab1">
+        <p>
+          <video
+            src="1655315287-1655315287-zoro-one-piece-black-white-hd-live-wallpaper-for-pc.mp4\"
+            width="1000px"
+            height="500px"
+            auto
+            controls
+          ></video>
+        </p>
+      </div>
+      <div id="tab2">
+        <p>
+          <img src="9d1672430ea09676a89760f1482a951b.jpg" />
+        </p>
+      </div>
+      <div id="tab3">
+        <p>
+          Born IN KGF<br />
+          Name is Rocky.<br />
+          India 's King<br />
+          WHole gold of world he had<br />
+          Live in mUmbai.
+        </p>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>
